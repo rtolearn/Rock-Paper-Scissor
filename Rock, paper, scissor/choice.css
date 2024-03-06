@@ -1,0 +1,58 @@
+.container-mode{
+    max-width: 50%;
+    max-height: 70%;
+    background-color: rgb(115, 173, 173);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1rem;
+}
+.container-mode > div{
+    padding: 5rem;
+}
+
+.container-mode > div > div{
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.choice-icon{
+    position: relative;
+
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+  
+}
+
+.choice-icon svg{
+    padding: 0.5rem;
+    animation: popping 0.5s linear infinite;
+}
+
+@keyframes popping{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);        
+    }
+}
+
+.choice-icon:hover{
+    transform: scale(1.2);
+}
+
+
+#choice-one{
+    width: fit-content;
+    height:fit-content;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#choice-one svg{
+    padding: 0.5rem;
+}
+
